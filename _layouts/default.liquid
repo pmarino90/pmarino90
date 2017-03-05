@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel='stylesheet' media="screen" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css">
+        <link rel='stylesheet' media="screen" type="text/css" href="/css/style.css">
+
+        {% if is_post %}
+          <title>Paolo Marino - {{ title }}</title>
+        {% else %}
+       	  <title>Paolo Marino</title>
+        {% endif %}
+    </head>
+    <body>
+      {% if is_post %}
+        {% include '_layouts/post.liquid' %}
+      {% else %}
+        {{ content }}
+      {% endif %}
+  </body>
+</html>

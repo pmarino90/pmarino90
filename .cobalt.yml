@@ -1,0 +1,9 @@
+name: Paolo's website
+description: I write things about programming and computer stuff
+link: http://paolomarino.me
+ignore: ["README.md", "build/*", ".git/*"]
+source: "."
+dest: "build"
+ignore:
+  - .git/*
+  - build/*
